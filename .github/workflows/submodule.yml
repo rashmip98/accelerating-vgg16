@@ -1,0 +1,19 @@
+name: Send Event
+  
+on:
+  push:
+    branches: [ master ]
+    tags:
+    - '*'
+
+jobs:
+  send-event:
+    runs-on: windows-latest
+    steps:
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.CLI_PAT }}
+        repository: penn-ese-539/handouts
+        event-type: submodule-update
+        client-payload: '{"submodule": "ese539_handouts/project", "email": "41898282+github-actions[bot]@users.noreply.github.com", "name": "github-actions[bot]"}'
