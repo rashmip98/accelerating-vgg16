@@ -1,0 +1,59 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/q4/build/multadd.sw_emu.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Dec  4 04:04:47 2021",
+ "timestampMillis": "1638590687922",
+ "buildStep": {
+  "cmdId": "e6a9325c-42a4-4c62-8533-04c4a28bf9e5",
+  "name": "v++",
+  "logFile": "/home/centos/_x/multadd.sw_emu/multadd.sw_emu.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t sw_emu --config q4/configs/design.cfg --log_dir q4/logs --report_dir q4/reports --platform /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --compile --kernel multadd -I q4/src -o q4/build/multadd.sw_emu.xo q4/src/multadd.cpp ",
+  "args": [
+   "-t",
+   "sw_emu",
+   "--config",
+   "q4/configs/design.cfg",
+   "--log_dir",
+   "q4/logs",
+   "--report_dir",
+   "q4/reports",
+   "--platform",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "--compile",
+   "--kernel",
+   "multadd",
+   "-I",
+   "q4/src",
+   "-o",
+   "q4/build/multadd.sw_emu.xo",
+   "q4/src/multadd.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/q4/configs/design.cfg",
+    "content": "debug=1\nprofile_kernel=data:all:all:all\n\n[connectivity]\nnk=multadd:1:multadd"
+   }
+  ],
+  "cwd": "/home/centos"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Dec  4 04:04:47 2021",
+ "timestampMillis": "1638590687922",
+ "status": {
+  "cmdId": "e6a9325c-42a4-4c62-8533-04c4a28bf9e5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
