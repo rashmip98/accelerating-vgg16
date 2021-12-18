@@ -1,0 +1,2 @@
+launch fpga_deploy
+start_job fpga_deploy -d project -c 'project/fpga_deploy.sh' -s
