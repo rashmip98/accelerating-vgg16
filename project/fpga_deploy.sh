@@ -6,7 +6,7 @@ echo 'This script expects to be ran from its parent directory and is not the mos
 
 export TARGET=hw
 export NAME=multadd
-export PROJECT_DIR=q4
+export PROJECT_DIR=project
 export BUCKET_NAME=ese539.41574243
 
 pwd
