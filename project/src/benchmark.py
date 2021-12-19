@@ -15,7 +15,7 @@ from pathlib import Path
 #   Flashing FPGA
 #   Instantiating your FPGA accelerated VGG16 net
 #   Any other initialization that shouldn't be timed
-host = load(name="host", sources=["q4/src/host.cpp"], extra_cflags=['-Wall', '-O3', '-g', '-std=c++14'],
+host = load(name="host", sources=["project/src/host.cpp"], extra_cflags=['-Wall', '-O3', '-g', '-std=c++14'],
             extra_ldflags=['-L$XILINX_XRT/lib/', '-lOpenCL', '-lpthread', '-lrt', '-lstdc++'],
             extra_include_paths=['I$XILINX_XRT/include/', 'I$XILINX_VIVADO/include/']
             #build_directory='/home/centos/project/build/', verbose=True
