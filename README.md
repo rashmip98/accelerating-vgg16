@@ -17,4 +17,4 @@ The overall goals of the project were:
 * Schedule computation and benchmark results with all two compute units
 
 ## Files
-The main files for the project are located in project/src/
+The main files for the project are located in [project/src/](../project/src)
