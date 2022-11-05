@@ -15,3 +15,6 @@ The overall goals of the project were:
 * Use C++ Extension to communicate to our kernel with PyTorch API
 * Implement software baseline and verify benchmarking with one compute unit
 * Schedule computation and benchmark results with all two compute units
+
+## Files
+The main files for the project are located in project/src/
